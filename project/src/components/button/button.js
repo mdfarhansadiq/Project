@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react'
 
 class Button extends Component {
@@ -20,13 +19,15 @@ class Button extends Component {
             count: this.state.count - 1
         })
     }
+
+
   render() {
     const {count} = this.state;
     return (
       <div>
         <h2>Count: {count}</h2>
-        <button onClick={this.countInc}>+</button>
-        <button onClick={this.countDec}>-</button>
+        <button className="btn btn-primary" onClick={this.countInc}>+</button>
+        <button className="btn btn-danger" onClick={this.countDec}>-</button>
       </div>
     )
   }
