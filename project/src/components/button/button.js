@@ -1,6 +1,7 @@
+
 import React, { Component } from 'react'
 
-export default class button extends Component {
+class Button extends Component {
 
     constructor(props) {
       super(props)
@@ -9,10 +10,27 @@ export default class button extends Component {
         count: 0
       }
     }
+    countInc = () => {
+        this.setState({
+            count: this.state.count + 1
+        })
+    }
+    countDec = () => {
+        this.setState({
+            count: this.state.count - 1
+        })
+    }
   render() {
     const {count} = this.state;
     return (
-      <div>button</div>
+      <div>
+        <h2>Count: {count}</h2>
+        <button onClick={this.countInc}>+</button>
+        <button onClick={this.countDec}>-</button>
+      </div>
     )
   }
 }
+
+
+export default Button;
