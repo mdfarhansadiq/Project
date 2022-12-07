@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <div className="container">
         <h1>React Lecture</h1>
-        <Title name = "Farhan"/>
+        <Title/>
         <Button/>
       </div>
     </div>
