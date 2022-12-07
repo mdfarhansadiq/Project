@@ -12,6 +12,22 @@ class Title extends Component {
       }
     }
 
+    keyPressHandler(event) {
+        if (event.key === 'Enter') {
+            this.setState({
+                ...this.state,
+                isInput: false
+            })
+        }
+    }
+
+    inputChange(event) {
+        this.setState({
+            ...this.state,
+            title: event.target.value
+        })
+    }
+
     editHandler() {
         this.setState({
             isInput: this.state.isInput = true
@@ -32,7 +48,8 @@ class Title extends Component {
                         type="text"
                         value={this.state.title}
                     />
-                </div>)
+                </div>
+            )
         }
         else{
             output = (
