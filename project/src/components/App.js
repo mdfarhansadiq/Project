@@ -1,7 +1,9 @@
 
 import './App.css';
 
+
 import Title from './title/title';
+import CountDown from './CountDown/countdown';
 import Button from './button/button';
 
 function App() {
@@ -11,6 +13,7 @@ function App() {
         <h1>React Lecture</h1>
         <Title/>
         <Button/>
+        <CountDown/>
       </div>
     </div>
   );
