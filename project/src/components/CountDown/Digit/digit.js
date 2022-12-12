@@ -10,7 +10,8 @@ const Digit = (props) => {
         //     </h1>
         // </div>
         <div className='Digit mx-3 text-center' style={{borderColor: props.color}}>
-            <h1 className='display-2 py-3' style={{color: props.color}}>00</h1>
+            <h1 className='display-2 py-3' style={{color: props.color}}> {props.value}
+            </h1>
         </div>
     )
 }
