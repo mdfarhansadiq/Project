@@ -4,6 +4,7 @@ import Title from "./title/title";
 import CountDown from "./CountDown/countdown";
 import Button from "./button/button";
 import { Component } from "react";
+import Controller from "./Controller/controller";
 
 class App extends Component {
   constructor(props) {
@@ -24,10 +25,11 @@ class App extends Component {
     return (
       <div className="App">
         <div className="container">
-          <h1>React Lecture</h1>
+          {/* <h1>React Lecture</h1> */}
           <Title />
-          <Button />
+          {/* <Button /> */}
           <CountDown time={time}/>
+          <Controller/>
         </div>
       </div>
     );
