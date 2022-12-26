@@ -90,6 +90,7 @@ class App extends Component {
                 reset= { this.getReset.bind(this) }
                 lap= { this.getLap.bind(this) }
                />
+               
           {/* <Laps className="my-5" laps={ this.state.laps } /> */}
         </div>
       </div>
