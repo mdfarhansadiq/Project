@@ -48,9 +48,9 @@ class App extends Component {
     }, 100)
   }
 
-  // getPause() {
-  //   clearInterval(this.intervalID)
-  // }
+  getPause() {
+    clearInterval(this.intervalID)
+  }
 
   getLap() {
     let time = {
@@ -86,7 +86,7 @@ class App extends Component {
           <CountDown time={time}/>
           <Controller 
                 start= { this.getStart.bind(this) }
-                // pause= { this.getPause.bind(this) }
+                pause= { this.getPause.bind(this) }
                 reset= { this.getReset.bind(this) }
                 lap= { this.getLap.bind(this) }
                />
