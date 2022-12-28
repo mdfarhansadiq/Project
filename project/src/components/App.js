@@ -48,21 +48,21 @@ class App extends Component {
     }, 100)
   }
 
-  // getPause() {
-  //   clearInterval(this.intervalID)
-  // }
-
-  getLap() {
-    let time = {
-      ...this.state.time
-    }
-    this.setState({
-      ...this.state,
-      laps: [time, ...this.state.laps]
-    })
-
-    console.log(this.state.laps)
+  getPause() {
+    clearInterval(this.intervalID)
   }
+
+  // getLap() {
+  //   let time = {
+  //     ...this.state.time
+  //   }
+  //   this.setState({
+  //     ...this.state,
+  //     laps: [time, ...this.state.laps]
+  //   })
+
+  //   console.log(this.state.laps)
+  // }
 
   getReset() {
     this.setState({
@@ -86,9 +86,9 @@ class App extends Component {
           <CountDown time={time}/>
           <Controller 
                 start= { this.getStart.bind(this) }
-                // pause= { this.getPause.bind(this) }
+                pause= { this.getPause.bind(this) }
                 reset= { this.getReset.bind(this) }
-                lap= { this.getLap.bind(this) }
+                // lap= { this.getLap.bind(this) }
                />
                
           {/* <Laps className="my-5" laps={ this.state.laps } /> */}

@@ -72,11 +72,11 @@ resetHandler() {
                     onClick={event => this.pauseHandler()}
                 >Pause
                 </button>
-                <button
+                {/* <button
                     className="btn btn-warning btn-lg px-5 ml-5"
                     onClick={event => this.lapHandler()}
                 >Lap
-                </button>
+                </button> */}
             </div>)
 
     } else if (start && reset) {
