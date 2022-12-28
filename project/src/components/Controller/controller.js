@@ -35,9 +35,9 @@ pauseHandler() {
     this.props.pause()
 }
 
-lapHandler() {
-    this.props.lap()
-}
+// lapHandler() {
+//     this.props.lap()
+// }
 
 resetHandler() {
     this.setState({
